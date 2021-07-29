@@ -2,7 +2,7 @@ var textInput = document.querySelector("#txt-input");
 var txtOutput = document.querySelector("#txt-output");
 var btnTranslate =document.querySelector("#translate-button");
 
-var serverURL = "https://api.funtranslations.com/translate/pirate.json";
+var serverURL = "https://api.funtranslations.com/translate/orcish.json";
 
 btnTranslate.addEventListener("click",clickHandler)
 
