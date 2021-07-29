@@ -4,16 +4,19 @@ var btnTranslate =document.querySelector("#translate-button");
 
 var serverURL = "https://api.funtranslations.com/translate/orcish.json";
 
-btnTranslate.addEventListener("click",clickHandler)
+function getURl(input){
+    return encodeURI(serverURL+"?"+"text="+input);
+}
 
 function clickHandler(){
-
+    
     fetch(getURl(textInput.value))
     .then(response => response.json())
-    .then(json => {txtOutput.innerText = json.contents.translated})
-
+    .then(json => {txtOutput.innerText = json.contents.translated
+    })
+    
 }
 
-function getURl(input){
-    return serverURL + "?" + "text=" + input;
-}
+
+
+btnTranslate.addEventListener("click",clickHandler)
