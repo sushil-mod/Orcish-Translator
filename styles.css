@@ -1,0 +1,58 @@
+@font-face {font-family: "ITC Galliard"; src: url("//db.onlinewebfonts.com/t/97e03bc37a8450b75b402cc4e579b2ad.eot"); src: url("//db.onlinewebfonts.com/t/97e03bc37a8450b75b402cc4e579b2ad.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/97e03bc37a8450b75b402cc4e579b2ad.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/97e03bc37a8450b75b402cc4e579b2ad.woff") format("woff"), url("//db.onlinewebfonts.com/t/97e03bc37a8450b75b402cc4e579b2ad.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/97e03bc37a8450b75b402cc4e579b2ad.svg#ITC Galliard") format("svg"); }
+
+
+*{
+    --primary-blue: #58F3D1;
+    --secondary-blue: #ade0e4;
+    --primary-lack: #212121;
+    margin: 0;
+    font-family: "ITC Galliard" ;
+}
+
+body{
+    background-color: aqua ;
+    color: var(--primary-lack);
+    display: grid;
+    place-content: center;
+    padding: 1rem;
+    row-gap: 0.8rem;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+.inputtext{
+    border-radius: 9px;
+    border-color: var(--primary-lack);
+    border-width: medium;
+    background-color: rgb(237, 236, 236);
+    outline: none;
+    height: 10rem;
+}
+
+.inputtext::placeholder {
+    font-weight: lighter;
+  }
+
+button{ 
+    
+    padding: 1rem 2rem;
+    width: max-content;
+    font-weight: 700;
+    font-size: small;
+    background-color: transparent;
+    color: var(--primary-lack);
+    border-radius: 7px;
+    border-color: var(--primary-lack);
+    margin: auto;
+    outline: none;
+}
+
+button:hover{
+    background-color: var(--primary-lack);
+    color: var(--primary-blue);
+}
+
+
+
